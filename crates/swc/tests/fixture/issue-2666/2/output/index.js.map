@@ -1,0 +1,1 @@
+{"version":3,"sources":["crates/swc/tests/fixture/issue-2666/1/input/index.js"],"sourcesContent":["if(true){var h=0;}\n"],"names":["h"],"mappings":"AAAA,EAAE,EAAC,IAAI,EAAC,CAAC;IAAA,GAAG,CAACA,CAAC,GAAC,CAAC;AAAC,CAAC"}

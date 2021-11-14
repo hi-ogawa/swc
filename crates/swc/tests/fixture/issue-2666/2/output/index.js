@@ -1,0 +1,4 @@
+{
+    "hello";
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNyYXRlcy9zd2MvdGVzdHMvZml4dHVyZS9pc3N1ZS0yNjY2LzIvaW5wdXQvaW5kZXguanMiXSwic291cmNlc0NvbnRlbnQiOlsie1wiaGVsbG9cIjt9XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsQ0FBQztJQUFBLENBQU87QUFBQyxDQUFDIn0=
