@@ -1070,12 +1070,20 @@ test!(
     var [a, b] = [, 2];
     [a, b] = [1, 2];
     [a, b] = [, 2];
+
     var [a, , c] = [1, 2, 3];
     var [, b, c] = [1, 2, 3];
     var [a, b, ] = [1, 2, 3];
     var [a, , c] = [1, , 3];
     var [, b, c] = [1, , 3];
     var [a, b, ] = [1, , 3];
+
+    [a, , c] = [1, 2, 3];
+    [, b, c] = [1, 2, 3];
+    [a, b, ] = [1, 2, 3];
+    [a, , c] = [1, , 3];
+    [, b, c] = [1, , 3];
+    [a, b, ] = [1, , 3];
     ; // Avoid completion record special case
 
     "#,
@@ -1134,6 +1142,24 @@ var ref9 = [
     ,
     3
 ], a = ref9[0], b = ref9[1];
+
+a = 1, c = 3;
+b = 2, c = 3;
+var ref10;
+ref10 = [
+    1,
+    2,
+    3
+], a = ref10[0], b = ref10[1], ref10;
+a = 1, c = 3;
+b = void 0, c = 3;
+var ref11;
+ref11 = [
+    1,
+    ,
+    3
+], a = ref11[0], b = ref11[1], ref11;
+
 ; // Avoid completion record special case
 
 "#

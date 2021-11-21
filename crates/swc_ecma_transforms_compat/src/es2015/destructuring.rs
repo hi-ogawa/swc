@@ -632,7 +632,12 @@ impl Fold for AssignFolder {
                                             })));
                                         }
 
-                                        None => {}
+                                        None => {
+                                            arr_elems
+                                                .as_mut()
+                                                .expect("pattern after rest element?")
+                                                .next();
+                                        }
                                     });
                                     return SeqExpr { span, exprs }.into();
                                 }
