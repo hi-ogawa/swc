@@ -193,7 +193,14 @@ impl AssignFolder {
                                     )
                                 }
 
-                                None => {}
+                                None => {
+                                    // Progress iterator to skip RHS element e.g.
+                                    //   const [first, , third] = ...
+                                    arr_elems
+                                        .as_mut()
+                                        .expect("pattern after rest element?")
+                                        .next();
+                                }
                             });
                             return;
                         }
